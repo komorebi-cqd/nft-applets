@@ -1,0 +1,62 @@
+@import '../../components/common/styles.scss';
+
+.invite-list-contianer {
+  @include bg-gradient;
+  font-family: '思源雅黑';
+}
+
+.invite-item {
+  height: 120rpx;
+  border-bottom: 1px solid #B73A16;
+  display: flex;
+  justify-content: space-between;
+  padding: 22rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.invite-info {
+  display: flex;
+
+  .invite-avatar {
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 50%;
+  }
+
+  .invite-info-text {
+    margin-left: 22rpx;
+
+    .invite-info-name {
+      font-size: 32rpx;
+      font-weight: 800;
+      color: #010101;
+    }
+
+    .invite-info-date {
+      font-size: 24rpx;
+      font-weight: 400;
+      color: #999999;
+    }
+  }
+}
+
+.invite-follow-button {
+  width: 125rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-weight: 800;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.invite-follow {
+
+  background: #BE3620;
+  border-radius: 30rpx;
+  color: #ffffff;
+}
+
+.invite-followed {
+  color: #666666;
+
+}

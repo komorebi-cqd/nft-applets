@@ -17,7 +17,7 @@
   border-bottom: 1px solid #B73A16;
   padding: 0 30rpx;
 
-  
+
 
   .auth-item-l {
     font-weight: 800;
@@ -32,4 +32,24 @@
     color: #999999;
     flex: 1 1 auto;
   }
+}
+
+.auth-tip {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #BE3620;
+  margin: 33rpx 36rpx 0;
+  display: flex;
+
+  .auth-tip-icon {
+    width: 30rpx;
+    height: 30rpx;
+    display: block;
+    margin: 3rpx 6rpx 0;
+    flex: 1 0 auto;
+  }
+}
+
+.submit-auth {
+  @include sava-button;
 }

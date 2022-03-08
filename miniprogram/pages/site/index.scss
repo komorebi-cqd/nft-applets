@@ -1,0 +1,27 @@
+@import '../../components/common/styles.scss';
+
+
+.site-container {
+  @include full-screen-gradient;
+  font-family: '思源雅黑';
+  font-size: 28rpx;
+  position: relative;
+  font-weight: 800;
+  color: #030000;
+
+}
+
+.site-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 100rpx;
+  height: 100rpx;
+  padding: 0 32rpx 0 60rpx;
+  border-bottom: solid 1px #B73A16;
+
+  .site-item-arrow {
+    width: 66rpx;
+    height: 66rpx;
+  }
+}

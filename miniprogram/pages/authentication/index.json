@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "实名认证",
-  "usingComponents": {}
+  "usingComponents": {
+    "auth-state": "../../components/auth-state/auth-state"
+  }
 }

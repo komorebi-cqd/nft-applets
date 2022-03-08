@@ -1,0 +1,11 @@
+<view class="site-container">
+  <view class="site-item" bindtap="goProtocol">
+    <text>服务条款</text>
+    <image class="site-item-arrow" src="../../icon/arrow-r.png"></image>
+  </view>
+
+  <view class="site-item" bindtap="goPrivacy">
+    <text>隐私政策</text>
+    <image class="site-item-arrow" src="../../icon/arrow-r.png"></image>
+  </view>
+</view>

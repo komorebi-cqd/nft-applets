@@ -1,0 +1,20 @@
+<view class="invite-list-contianer">
+  <block wx:for="{{inviteList}}" wx:key="id">
+    <view class="invite-item">
+      <view class="invite-info">
+        <image class="invite-avatar" src="{{item.userImg}}"></image>
+        <view class="invite-info-text">
+          <view class="invite-info-name">{{item.userName}}</view>
+          <view class="invite-info-date">{{item.registerDate}}</view>
+        </view>
+      </view>
+      <view wx:if="{{item.isFollow}}" class="invite-follow-button invite-followed">
+        已关注
+      </view>
+      <view wx:else class="invite-follow-button invite-follow">
+        关注
+      </view>
+    </view>
+  </block>
+
+</view>

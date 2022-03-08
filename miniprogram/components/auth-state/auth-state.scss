@@ -1,0 +1,41 @@
+@import '../common/styles.scss';
+
+.auth-state-container {
+  @include full-screen-gradient;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 666;
+}
+
+.auth-state {
+  margin-top: 85rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 28rpx;
+  font-family: '思源雅黑';
+
+  .auth-state-image {
+    background: #fff;
+    width: 234rpx;
+    height: 257rpx;
+  }
+
+  .auth-tip-text {
+    margin: 80rpx 0 52rpx;
+    color: #000000;
+  }
+
+  .auth-button {
+    width: 360rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    background: #BE3620;
+    border-radius: 45rpx;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}

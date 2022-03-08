@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/authentication/index",
+    "pages/site/index",
+    "pages/inviteList/index",
     "pages/userInfo/index",
     "pages/personalSite/index",
     "pages/personalNotify/index",

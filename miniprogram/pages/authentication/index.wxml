@@ -8,4 +8,17 @@
     <view class="auth-item-l">身份证号</view>
     <input placeholder="请输入身份证号" bindinput="changeIdCard" class="auth-item-r" value="{{identityInfo.idCard}}"/>
   </view>
+
+
+  <view class="auth-tip" wx:if="{{!identityInfo.isAuth}}">
+    <image class="auth-tip-icon" src="../../icon/auth-tip.png"></image>
+    <text>请输入真实的实名信息，此身份信息将用于后续的绑定支付且不可更改</text>
+  </view>
+
+
+  <view class="submit-auth" bindtap="submitAuth" wx:if="{{!identityInfo.isAuth}}">
+    保存
+  </view>
+
+  <auth-state id="authState"  state="{{state}}"/>
 </view>

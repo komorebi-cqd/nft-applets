@@ -1,4 +1,4 @@
-// pages/personalSite/index.ts
+// pages/site/index.ts
 Page({
 
   /**
@@ -7,30 +7,19 @@ Page({
   data: {
 
   },
-  //去个人账户资料
-  goUserInfo(){
+  //去服务条款
+  goProtocol(){
     wx.navigateTo({
-      url: '../userInfo/index'
+      url: '../protocol/index'
     })
   },
-  //我的认证
-  goAuth(){
+  //去隐私政策
+  goPrivacy(){
     wx.navigateTo({
-      url: '../authentication/index'
+      url: '../privacy/index'
     })
   },
-  //邀请好友
-  goInvite(){
-    wx.navigateTo({
-      url: '../inviteFriend/index'
-    })
-  },
-  //去关于我们
-  goAbout(){
-    wx.navigateTo({
-      url: '../site/index'
-    })
-  },
+  
 
   /**
    * 生命周期函数--监听页面加载

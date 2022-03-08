@@ -10,3 +10,18 @@
   min-height: 100vh;
   background: linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
 }
+
+@mixin sava-button {
+  width: 660rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #BE3620;
+  border-radius: 45rpx;
+  color: #fff;
+  position: absolute;
+  font-weight: bold;
+  bottom: 72rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}

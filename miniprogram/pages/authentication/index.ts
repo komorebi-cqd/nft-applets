@@ -4,29 +4,52 @@ Page({
   /**
    * 页面的初始数据
    */
+  authState: <any> null,
   data: {
     identityInfo: {
       name: '',
-      idCard: ''
-    }
+      idCard: '',
+      isAuth: false
+    },
+    state: false
   },
+  //改变名字
   changeName(e: any) {
     this.setData({
       'identityInfo.name': e.detail.value
     })
   },
-
+  //改变身份信息
   changeIdCard(e: any) {
     this.setData({
       'identityInfo.idCard': e.detail.value
     })
+  },
+  //没实名认证的时候提交
+  submitAuth() {
+    let that = this;
+    //认证失败
+    // this.setData({
+    //   state: false
+    // })
+    // wx.setNavigationBarTitle({ title: '认证失败' })
+    //认证成功
+    this.setData({
+      state: true
+    })
+    wx.setNavigationBarTitle({ title: '认证成功' })
+
+    wx.nextTick(() => {
+      that.authState.showAuth();
+    })
+    console.log(this.data.identityInfo);
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    this.authState= this.selectComponent("#authState");
   },
 
   /**
