@@ -1,0 +1,33 @@
+<view class="comment-container">
+  <view class="comment-wrap">
+    <view class="comment-sub">评论</view>
+    <release emptyImageUrl="https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/no-comment.png" emptyText="暂无评论" wx:if="{{false}}" />
+
+    <view class="comment-content">
+      <block wx:for="{{commentList}}" wx:key="id">
+        <view class="comment-item">
+          <view class="comment-top">
+            <image class="comment-avatar" src="{{item.avatar}}" />
+            <text class="comment-name">{{item.userName}}</text>
+            <view class="comment-date">{{item.commentDate}}</view>
+          </view>
+          <view class="comment-text">
+            {{item.commentContent}}
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <view class="more">
+      查看更多
+      <image class="more-arrow" src="https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/arrow.png" />
+    </view>
+    <view class="line-wrap">
+    </view>
+  </view>
+  <view class='commentsInputLayout' wx:if="{{true}}">
+    <input value='{{commentsContent}}' type='text' maxlength='100' class='commentsInput' placeholder='评论' placeholder-class='phcolor' bindinput='inputCommentsContentListening' bindfocus="inputCommentsFocus" bindblur="inputCommentsBlur"></input>
+    <text class='commentsBtn' bindtap='clickComments'>发布</text>
+
+  </view>
+</view>

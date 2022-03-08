@@ -1,0 +1,108 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.top-search {
+  height: 88rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/top-bcg.png') no-repeat;
+  background-size: 100% auto;
+
+}
+
+.avatar {
+  .avatar-img {
+    width: 58rpx;
+    height: 58rpx;
+    border-radius: 50%;
+  }
+}
+
+.search {
+  height: 54rpx;
+  width: 586rpx;
+  position: relative;
+
+  .go-search {
+    width: 586rpx;
+    height: 54rpx;
+    border: 1rpx solid #DC404B;
+    border-radius: 27rpx;
+  }
+
+  .search-l {
+    position: absolute;
+    left: 34rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #666666;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 19rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26rpx;
+    height: 28rpx;
+  }
+
+}
+
+.content-wrap {
+  min-height: calc(100vh - 88rpx);
+  width: 100%;
+  background: linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
+  box-sizing: border-box;
+}
+
+.content-wrap2 {
+  min-height: calc(100vh - 88rpx);
+  width: 100%;
+  padding: 0 30rpx;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/content-bottom.png') no-repeat;
+  background-origin: padding-box;
+  background-size: 100% auto;
+  background-position: bottom;
+  box-sizing: border-box;
+
+}
+
+.content {
+  min-height: calc(100vh - 88rpx);
+  width: 100%;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/content-middle.png') no-repeat;
+  background-size: contain;
+  background-position: bottom 209rpx left 0;
+  box-sizing: border-box;
+  padding-bottom: 35rpx;
+}
+
+.choose {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30rpx;
+
+  .category {
+    width: 235rpx;
+    height: 88rpx;
+    font-size: 26rpx;
+    font-family: '思源雅黑';
+    font-weight: 800;
+    color: #FFFFFF;
+    background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/unselected.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    line-height: 72rpx;
+  }
+  .checked{
+    background-image: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/selectd.png');
+  }
+}

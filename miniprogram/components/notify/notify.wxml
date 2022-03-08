@@ -1,0 +1,3 @@
+<view class="notify" style="background: {{background}};color: {{color}};" animation="{{animationData}}">
+  {{message}}
+</view>

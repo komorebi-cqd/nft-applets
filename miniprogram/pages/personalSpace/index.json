@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "content-item": "../../components/content-item/content-item",
+    "release": "../../components/empty/empty",
+    "notify": "../../components/notify/notify"
+  }
+}

@@ -1,0 +1,20 @@
+/**app.wxss**/
+// @font-face {
+//   font-family: '思源宋体';
+//   src: url("https://qmzqmz.oss-cn-shenzhen.aliyuncs.com/font/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.otf?Expires=1646380793&OSSAccessKeyId=TMP.3KiRA3DdmcSB9G1s1BRBr2oG6wq5MbQhYqqMZR1hC64chc4AyGAV3NCCyiUAVJfW4EzGKw3k4tSuXCuWmR2HmiABBHWzjy&Signature=OyzbE3cU%2F1PD0e4vu50DkNhdJcw%3D&versionId=CAEQSxiBgMDNwJC7.hciIGI5Mjk0OTY0Y2EzNTQ4NGM5NDg5N2U4NzUxNDExM2Qx")
+// }
+
+// @font-face {
+//   font-family: 'SourceHanSerifSC-Regular';
+//   src: url("https://qmzqmz.oss-cn-shenzhen.aliyuncs.com/font/SourceHanSerifSC-Regular.otf?Expires=1646380831&OSSAccessKeyId=TMP.3KiRA3DdmcSB9G1s1BRBr2oG6wq5MbQhYqqMZR1hC64chc4AyGAV3NCCyiUAVJfW4EzGKw3k4tSuXCuWmR2HmiABBHWzjy&Signature=Wd%2BBsos7uvtJRnqIMMpd0LNACHM%3D&versionId=CAEQSxiBgID0wJC7.hciIDJiZWVmNDJiYmE4NDQzOGY5OTJlZGYwODNjMmFkZDY1")
+// }
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}

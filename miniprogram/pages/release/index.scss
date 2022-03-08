@@ -1,0 +1,43 @@
+.release-contianer {
+  width: 100%;
+  height: 100vh;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/content-middle.png') no-repeat top left, linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
+  background-size: contain;
+  background-position: bottom 209rpx left 0;
+  box-sizing: border-box;
+  padding: 47rpx 32rpx 62rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .upload-button {
+    width: 660rpx;
+    height: 90rpx;
+    background: #BE3620;
+    border-radius: 45rpx;
+    color: #fff;
+    font-weight: 800;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 62rpx;
+  }
+}
+
+.upload-img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  border: 2px solid #BE3620;
+}
+
+.upload-text {
+  width: 686rpx;
+  height: 275rpx;
+  background: #E9F2F0;
+  border: 1rpx solid #1A97A1;
+  border-radius: 20rpx;
+  padding: 24rpx 27rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+

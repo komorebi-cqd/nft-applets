@@ -1,0 +1,146 @@
+.content-item {
+  z-index: 2;
+  width: 100%;
+  min-height: 770rpx;
+  position: relative;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/article-top.png') left top no-repeat, url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/article-bottom.png') left bottom no-repeat;
+  background-size: 100% auto;
+  min-height: 500rpx;
+  box-sizing: border-box;
+  margin: 0 auto 10rpx;
+  padding: 30rpx 32rpx 50rpx;
+}
+
+.line-wrap {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 200rpx;
+  bottom: 254rpx;
+  width: 100%;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/article-middle.png') left top repeat-y;
+  background-size: 100% auto;
+}
+
+.article-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rpx;
+  box-sizing: border-box;
+
+  .article-top-l {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-avatar {
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 50%;
+  }
+
+  .user-name {
+    font-size: 32rpx;
+    font-family: '思源宋体';
+    font-weight: 800;
+    color: #010101;
+    display: block;
+    margin: 0 13rpx 0 23rpx;
+  }
+
+  .user-mark {
+    width: 30rpx;
+    height: 30rpx;
+  }
+
+  .follow {
+    font-size: 24rpx;
+    font-family: '思源宋体';
+    font-weight: 800;
+    color: #BE3620;
+
+    &.no {
+      color: #999999;
+    }
+  }
+
+}
+
+.article-image {
+  width: 100%;
+  height: 500rpx;
+  position: relative;
+  .collection-mark{
+    position: absolute;
+    width: 139rpx;
+    height: 58rpx;
+    right: 24rpx;
+    top: 18rpx;
+    background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/collection-mark.png') no-repeat;
+    background-size: contain;
+
+  }
+  .article-image-url {
+    width: 100%;
+    height: 100%;
+    border-radius: 20rpx;
+  }
+}
+
+.article-operate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22rpx;
+  margin-bottom: 20rpx;
+
+  .operate-l {
+    display: flex;
+
+    .operate-block {
+      position: relative;
+      margin-right: 40rpx;
+      width: 36rpx;
+      height: 36rpx;
+
+      .operate-icon {
+        width: 100%;
+        height: 100%;
+      }
+
+      .sub-title {
+        display: block;
+        position: absolute;
+        right: -14rpx;
+        top: -10rpx;
+        font-size: 16rpx;
+        font-family: "思源宋体";
+        font-weight: 400;
+        color: #000000;
+      }
+    }
+  }
+
+  .operate-r {
+    font-weight: bolder;
+    color: #000000;
+  }
+}
+
+.article-text {
+  font-size: 28rpx;
+  font-family: '思源雅黑';
+  font-weight: 400;
+  color: #000000;
+  line-height: 42rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical
+}

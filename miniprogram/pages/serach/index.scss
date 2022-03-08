@@ -1,0 +1,47 @@
+.search-content{
+  width: 100%;
+  height: 88rpx;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/top-bcg.png') no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search {
+  height: 54rpx;
+  width: 586rpx;
+  position: relative;
+
+  .search-input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DC404B;
+    border-radius: 27px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 6rpx 47rpx 6rpx 60rpx;
+    box-sizing: border-box;
+    font-size: 24rpx;
+    font-weight: bold;
+    color: #666666;
+    line-height: 26rpx;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 20rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26rpx;
+    height: 28rpx;
+  }
+
+}
+.search-result{
+  min-height: calc(100vh - 88rpx);
+  width: 100%;
+  background: linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
+  box-sizing: border-box;
+  padding: 30rpx 0 35rpx 0;
+}

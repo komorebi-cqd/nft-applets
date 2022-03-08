@@ -1,0 +1,22 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  .empty-image {
+    margin-bottom: 20rpx;
+    .empty-image-src {
+      width: 244rpx;
+      height: 183rpx;
+    }
+
+  }
+
+  .empty-description {
+    font-size: 28rpx;
+    color: #999999;
+    font-weight: bold;
+  }
+}

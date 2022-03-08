@@ -1,0 +1,39 @@
+<view class="home">
+  <view class="top-search">
+    <view class="avatar" bindtap="goSpace">
+      <image class="avatar-img" src="{{avatar}}" />
+    </view>
+    <view class="search">
+      <text class="search-l">搜索</text>
+      <navigator url="/pages/serach/index" class="go-search"></navigator>
+      <image class="search-icon" src="../../icon/search.png" />
+    </view>
+  </view>
+  <view class="content-wrap">
+    <view class="content-wrap2">
+      <view class="content">
+        <release wx:if="{{false}}" empty-image-url="https://qmzqmz.oss-cn-shenzhen.aliyuncs.com/image/nft-image/nft-image/rest.png" empty-text="网络不佳" />
+        <release-button></release-button>
+        <view class="choose">
+          <block wx:for="{{navTap}}" wx:key="id">
+            <view class="category" class="category {{item.id === current ? 'checked' : ''}}" bindtap="swichType" data-index="{{item.id}}">{{item.navName}}</view>
+          </block>
+        </view>
+        <swiper class="swiper" style="height: {{swiperHeight}}px;" current="{{current}}" bindchange="swiperChange">
+          <swiper-item>
+            <content-item contentArray="{{dynamicList}}" class='swiper-1' />
+          </swiper-item>
+          <swiper-item>
+            <content-item contentArray="{{collection}}" class='swiper-2' />
+          </swiper-item>
+          <swiper-item>
+            <content-item contentArray="{{followList}}" class='swiper-3' />
+          </swiper-item>
+        </swiper>
+
+
+      </view>
+    </view>
+  </view>
+
+</view>

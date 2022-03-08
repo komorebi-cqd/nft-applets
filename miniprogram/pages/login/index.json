@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "登录",
+  "usingComponents": {
+    "toast": "../../components/toast/toast",
+    "dialog": "../../components/dialog/dialog",
+    "notify": "../../components/notify/notify"
+  }
+}

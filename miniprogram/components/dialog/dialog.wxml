@@ -1,0 +1,11 @@
+<view class="dialog-container" hidden="{{isShow}}" animation="{{animation}}">
+  <view class="mask" capture-bind:tap="cancel"></view>
+  <view class="dialog-content">
+    <view class="title">{{title}}</view>
+    <view class="content">{{content}}</view>
+    <view class="dialog-button">
+      <button class="button-l" bindtap="cancel">{{cancel}}</button>
+      <button class="button-r" bindtap="confirm">{{confirm}}</button>
+    </view>
+  </view>
+</view>

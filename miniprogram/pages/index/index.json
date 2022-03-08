@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "九色鹿",
+  "usingComponents": {
+    "release": "../../components/empty/empty",
+    "release-button": "../../components/release-button/release-button",
+    "content-item": "../../components/content-item/content-item"
+  }
+}

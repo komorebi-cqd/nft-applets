@@ -1,0 +1,6 @@
+<!-- 发布页面 -->
+<view class="release-contianer">
+  <view class="upload-img"></view>
+  <textarea class="upload-text" name="" id="" cols="30" rows="10" placeholder="添加描述"></textarea>
+  <button class="upload-button">发送</button>
+</view>

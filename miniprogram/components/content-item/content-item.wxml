@@ -1,0 +1,46 @@
+<view class="content-item" wx:for="{{contentArray}}" wx:key="id">
+  <!-- 文章ID -->
+  <view class="article" data-index="{{item.id}}">
+    <view class="article-top">
+      <!-- 需要用户ID -->
+      <view class="article-top-l" bindtap="goPersonalSpace" data-userid="{{item.id}}">
+        <image class="user-avatar" src="{{item.avatar}}"></image>
+        <text class="user-name">{{item.name}}</text>
+        <image wx:if="{{item.approve}}" class="user-mark" src="../../icon/auth.png"></image>
+      </view>
+      <view class="follow" wx-if="{{item.isFollow}}">
+        +关注
+      </view>
+      <view class="follow no" wx:else>
+        已关注
+      </view>
+    </view>
+    <view class="article-image" bindtap="goDetail" data-index="{{item.id}}">
+      <image class="article-image-url" src="{{item.articleCover}}"></image>
+      <view class="collection-mark" wx:if="{{item.isCollection}}"></view>
+    </view>
+
+    <view class="article-operate">
+      <view class="operate-l">
+        <view class="operate-block">
+          <image class="operate-icon" src="../../icon/link.png"></image>
+          <text class="sub-title">{{item.love}}</text>
+        </view>
+        <view class="operate-block" bindtap="goDetail" data-index="{{item.id}}">
+          <image class="operate-icon" src="../../icon/comment.png"></image>
+          <text class="sub-title">{{item.comment}}</text>
+        </view>
+        <view class="operate-block">
+          <image class="operate-icon" src="../../icon/wx.png"></image>
+        </view>
+      </view>
+      <view class="operate-r">···</view>
+    </view>
+    <view class="article-text" bindtap="goDetail" data-index="{{item.id}}">
+      {{item.articleText}}
+    </view>
+  </view>
+
+  <view class="line-wrap">
+  </view>
+</view>

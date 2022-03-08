@@ -1,0 +1,95 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/%E5%9B%BE%E5%B1%82%202134.png') no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.login-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .login-block {
+    width: 208rpx;
+    height: 208rpx;
+    background: #BE3620;
+    border-radius: 30px;
+    margin-bottom: 36rpx;
+    margin-top: 248rpx;
+
+    .login-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .login-text {
+    font-size: 36rpx;
+    font-weight: 800;
+    color: #BE3620;
+    font-family: '思源宋体';
+  }
+}
+
+.login-pact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200rpx;
+
+  .read-pact {
+    display: flex;
+    font-size: 24rpx;
+    color: #666666;
+    font-weight: bold;
+    font-family: '思源宋体';
+
+    .pact-link {
+      color: #BE3620;
+    }
+  }
+
+  .auth-login {
+    width: 360rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    background: #BE3620;
+    border-radius: 45rpx;
+    color: #fff;
+    font-size: 28rpx;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 38rpx;
+  }
+}
+
+.checkbox .wx-checkbox-input {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  border-color: #BE3620;
+  background: transparent;
+  vertical-align: middle;
+}
+
+/*checkbox选中后样式  */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #BE3620;
+}
+
+/*checkbox选中后图标样式  */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #ffffff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

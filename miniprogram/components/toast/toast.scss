@@ -1,0 +1,25 @@
+/* components/toast/toast.wxss */
+.toast-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 180rpx;
+  min-height: 80rpx;
+  background: rgba($color: #000000, $alpha: 0.7);
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+
+  .toast-text {
+    font-size: 28rpx;
+    font-family: '思源雅黑';
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 36rpx;
+    opacity: 1;
+    z-index: 666;
+  }
+}

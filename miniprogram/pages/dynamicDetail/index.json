@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "动态详情",
+  "usingComponents": {
+    "comment": "../../components/comment/comment"
+  }
+}

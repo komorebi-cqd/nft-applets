@@ -1,0 +1,54 @@
+.mask {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 666;
+  top: 0;
+  left: 0;
+  background: rgba($color: #000000, $alpha: 0.3);
+}
+
+.dialog-content {
+  position: fixed;
+  z-index: 666;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  width: 600rpx;
+  min-height: 311rpx;
+  padding: 29rpx 38rpx 40rpx;
+  box-sizing: border-box;
+  color: #333333;
+  font-size: 28rpx;
+  font-weight: 800;
+  font-family: '思源宋体';
+  border-radius: 20rpx;
+  .content{
+    margin: 38rpx 0 50rpx;
+  }
+}
+
+.dialog-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .button-l,
+  .button-r {
+    width: 125rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    background: #BE3620;
+    border-radius: 30rpx;
+    color: #fff;
+    padding: 0;
+    font-size: 28rpx;
+  }
+  .button-l{
+    background: #999999;
+  }
+}

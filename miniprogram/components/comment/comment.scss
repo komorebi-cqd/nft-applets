@@ -1,0 +1,161 @@
+.comment-container {
+  width: 100%;
+  min-height: 313rpx;
+  background: linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.comment-wrap {
+  z-index: 2;
+  width: 100%;
+  min-height: 313rpx;
+  position: relative;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/comment-top.png') left top no-repeat, url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/comment-bottom.png') left bottom no-repeat;
+  background-size: 100% auto;
+  box-sizing: border-box;
+  margin: 0 auto 0rpx;
+  padding: 90rpx 30rpx 38rpx;
+  position: relative;
+
+  .comment-sub {
+    position: absolute;
+    left: 29rpx;
+    top: 36rpx;
+    font-size: 28rpx;
+    font-family: '思源雅黑';
+    font-weight: 800;
+    color: #333333;
+  }
+}
+
+.line-wrap {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 130rpx;
+  bottom: 60rpx;
+  width: 100%;
+  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/article-middle.png') left top repeat-y;
+  background-size: 100% auto;
+}
+
+.comment-item {
+  margin-bottom: 33rpx;
+}
+
+.comment-top {
+  display: flex;
+  font-family: '思源雅黑';
+  align-items: center;
+  margin-bottom: 26rpx;
+
+  .comment-avatar {
+    width: 50rpx;
+    height: 55rpx;
+    border-radius: 50%;
+    flex: 0 0 auto;
+  }
+
+  .comment-name {
+    font-size: 32rpx;
+    font-weight: 800;
+    color: #010101;
+    flex: 0 0 auto;
+    display: inline-block;
+    margin-left: 12rpx;
+  }
+
+  .comment-date {
+    font-size: 24rpx;
+    font-weight: 800;
+    color: #999999;
+    flex: 1 1 auto;
+    text-align: right;
+  }
+}
+
+.comment-text {
+  padding-left: 62rpx;
+  font-size: 28rpx;
+  font-family: '思源雅黑';
+  font-weight: 800;
+  color: #666666;
+  line-height: 42rpx;
+}
+
+.more {
+  position: relative;
+  display: flex;
+  font-size: 24rpx;
+  font-family: '思源雅黑';
+  font-weight: 800;
+  color: #010101;
+  justify-content: center;
+
+  .more-arrow {
+    width: 30rpx;
+    height: 30rpx;
+  }
+}
+
+.comment-enter {
+  border: springgreen 1px solid;
+}
+
+
+
+.commentsInputLayout {
+  width: 100%;
+  height: 100rpx;
+  z-index: 20;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  /* 使之可以滚动 */
+  /* overflow-y: scroll; */
+  /* 增加该属性，可以增加弹性，是滑动更加顺畅 */
+
+  -webkit-overflow-scrolling: touch;
+
+}
+
+/** border-top必须设置，如不设置在部分机型上会出现定位不准问题*/
+
+.commentsInput {
+  width: 602rpx;
+  background: #FFFFFF;
+  opacity: 0.3;
+  border-radius: 30px;
+  height: 60rpx;
+  line-height: 60rpx;
+  position: relative;
+  flex: 1;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  font-size: 32rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333;
+  border-top: solid #f4f4f4 0.01rpx;
+  background-color: #f4f4f4;
+  z-index: 21;
+  margin-bottom: 10rpx;
+}
+
+
+.commentsBtn {
+  height: 60rpx;
+  line-height: 60rpx;
+  position: relative;
+  font-size: 30rpx;
+  color: #BE3620;
+  padding-left: 30rpx;
+  background-color: transparent;
+  font-family: '思源雅黑';
+  font-weight: 800;
+  z-index: 21;
+}

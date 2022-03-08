@@ -1,0 +1,3 @@
+<view class="toast-container" style="top: 20%;" animation="{{animationData}}">
+  <text class="toast-text">{{message}}</text>
+</view>

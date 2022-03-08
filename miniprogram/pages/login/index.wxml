@@ -1,0 +1,22 @@
+<view class="login">
+  <notify id='toast' message="请选中阅读并同意后再登录"></notify>
+  <!-- <dialog id='dialog' bind:confirmEvent="_confirmEvent" bind:cancelEvent="_cancelEvent"></dialog> -->
+  <view class="login-logo">
+    <view class="login-block">
+      <image class="login-img" src="https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/logo.png" />
+    </view>
+    <text class="login-text">九色鹿</text>
+  </view>
+  <view class="login-pact">
+    <view class="read-pact">
+      <checkbox-group bindchange="checkChange">
+        <label class="checkbox checkwords">
+          <checkbox class="check" value="agree" checked="{{agree}}" />
+        </label>
+      </checkbox-group>
+
+      已阅读并同意xxxx的<navigator url="/pages/protocol/index" class="pact-link">《用户协议》</navigator>及<navigator url="/pages/privacy/index" class="pact-link">《隐私政策》</navigator>
+    </view>
+    <button class="auth-login" bindtap="login">微信授权登录</button>
+  </view>
+</view>

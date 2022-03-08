@@ -1,0 +1,155 @@
+.personal-space {
+  width: 100%;
+  min-height: 100vh;
+  background: url('https://img1.baidu.com/it/u=2320602291,3993237145&fm=253&fmt=auto&app=120&f=JPEG?w=640&h=375') no-repeat top left, linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
+  background-size: contain;
+  padding: 0 30rpx 76rpx;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  font-family: '思源雅黑';
+}
+
+.personal-site {
+  position: absolute;
+  top: 25rpx;
+  right: 34rpx;
+  display: flex;
+
+  .personal-icon {
+    width: 64rpx;
+    height: 64rpx;
+  }
+
+  .personal-info-icon {
+    background: url('../../icon/wx.png') no-repeat;
+    background-size: cover;
+    background: #1A97A1;
+  }
+
+  .personal-site-icon {
+    background: url('../../icon/site.png') no-repeat;
+    background-size: contain;
+    background: #000000;
+    margin-left: 33rpx;
+  }
+}
+
+.personal-top {
+  width: 686rpx;
+  height: 225rpx;
+  background: #E9F2F0;
+  border: 2rpx solid #1A97A1;
+  position: absolute;
+  top: 220rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.personal-introduce {
+  display: flex;
+  justify-content: space-between;
+
+  .personal-intro {
+    display: flex;
+
+    .personal-avtart {
+      width: 90rpx;
+      height: 90rpx;
+      border-radius: 50%;
+    }
+
+  }
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 26rpx;
+
+  .personal-info-name {
+    font-size: 32rpx;
+    font-weight: 800;
+    color: #BE3620;
+  }
+
+  .personal-info-introduce {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: #666666;
+  }
+}
+
+.creator-apply {
+  width: 180rpx;
+  height: 60rpx;
+  background: #BE3620;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.personal-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+  font-weight: 800;
+  color: #333333;
+  margin-top: 30rpx;
+
+  .personal-nums {
+    padding-right: 16rpx;
+  }
+}
+
+.personal-nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 500rpx;
+  margin-bottom: 40rpx;
+  font-size: 32rpx;
+  font-weight: 800;
+  color: #BE3620;
+  position: relative;
+
+  .personal-nav-type {
+    position: relative;
+    opacity: 0.5;
+  }
+
+  .personal-active {
+    opacity: 1;
+  }
+
+  .personal-active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -16rpx;
+    transform: translateX(-50%);
+    display: block;
+    width: 30rpx;
+    height: 6rpx;
+    background: #BE3620;
+  }
+}
+
+.personal-follow-button {
+  position: fixed;
+  bottom: 52rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 660rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  background: #BE3620;
+  border-radius: 45rpx;
+  font-size: 28rpx;
+  font-family: '思源雅黑';
+  font-weight: 800;
+  color: #FFFFFF;
+}

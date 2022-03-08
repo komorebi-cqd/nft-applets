@@ -1,0 +1,17 @@
+<view class="search-content">
+  <view class="search">
+    <image class="search-icon" src="../../icon/search.png" />
+    <input class="search-input" placeholder="请搜索关键词" type="text" />
+  </view>
+</view>
+<view class="search-result">
+  <release width="{{165}}" height="{{193}}" empty-image-url="https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/empty.png" empty-text="暂无内容" />
+  <release-button />
+  <!-- <content-item>
+    1111
+  </content-item>
+  <content-item>
+    222
+  </content-item>
+  <content-item>3333</content-item> -->
+</view>
