@@ -1,0 +1,64 @@
+@import '../../components/common/styles.scss';
+
+
+.user-info {
+  @include full-screen-gradient;
+  font-family: '思源雅黑';
+  font-size: 28rpx;
+  position: relative;
+
+}
+
+.user-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100rpx;
+  border-bottom: 1px solid #B73A16;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+
+  .user-info-introduction {
+    flex: 1 0 auto;
+  }
+
+  .user-info-sub-title {
+    flex: 1 0 auto;
+    margin-right: 40rpx;
+    font-weight: 800;
+    color: #030000;
+  }
+
+  .user-nike {
+    text-align: right;
+  }
+
+  .user-info-sub {
+    font-weight: 800;
+    color: #999999;
+  }
+
+  .user-introduction {
+    font-size: 28rpx;
+    font-weight: 800;
+    color: #999999;
+    padding: 10rpx 0;
+    box-sizing: border-box;
+    height: 200rpx;
+  }
+}
+
+.user-info-save {
+  width: 660rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background: #BE3620;
+  border-radius: 45rpx;
+  color: #fff;
+  position: absolute;
+  font-weight: bold;
+  bottom: 72rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}

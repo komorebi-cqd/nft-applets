@@ -1,2 +1,41 @@
-<!--pages/personalSite/index.wxml-->
-<text>pages/personalSite/index.wxml</text>
+<view class="personal-site">
+  <view class="personal-site-item" bindtap="goUserInfo">
+    <view class="personal-site-item-icon">
+      <image class="personal-site-item-img" src="https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg"></image>
+      <text class="personal-site-text">账户资料</text>
+    </view>
+    <view class="personal-site-allow">
+    </view>
+  </view>
+
+
+  <view class="personal-site-item" bindtap="goAuth">
+    <view class="personal-site-item-icon">
+      <image class="personal-site-item-img" src="https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg"></image>
+      <text class="personal-site-text">我的认证</text>
+    </view>
+    <view class="personal-site-allow">
+    </view>
+  </view>
+
+  <view class="personal-site-item" bindtap="goInvite">
+    <view class="personal-site-item-icon">
+      <image class="personal-site-item-img" src="https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg"></image>
+      <text class="personal-site-text">邀请好友</text>
+    </view>
+    <view class="personal-site-allow">
+    </view>
+  </view>
+
+  <view class="personal-site-item" bindtap="goAbout">
+    <view class="personal-site-item-icon">
+      <image class="personal-site-item-img" src="https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg"></image>
+      <text class="personal-site-text">关于我们</text>
+    </view>
+    <view class="personal-site-allow">
+    </view>
+  </view>
+
+
+
+</view>

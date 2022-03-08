@@ -1,25 +1,31 @@
-// pages/authentication/index.ts
+// pages/userInfo/index.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    identityInfo: {
-      name: '',
-      idCard: ''
+    userInfo: {
+      nike: '桃之助',
+      phone: '13333333333',
+      introduction: '故人西辞黄鹤楼, 烟花三月下扬州。故人西辞黄鹤楼, 烟花三月下扬州。故人西辞黄鹤楼, 烟花三月下扬州。 孤帆远影碧空尽, 唯见长江天际流。'
     }
   },
-  changeName(e: any) {
+  //改变昵称
+  changeNike(e: any) {
     this.setData({
-      'identityInfo.name': e.detail.value
+      'userInfo.nike': e.detail.value
     })
   },
-
-  changeIdCard(e: any) {
+  //改变简介
+  changeIntro(e:any){
     this.setData({
-      'identityInfo.idCard': e.detail.value
+      'userInfo.introduction': e.detail.value
     })
+  },
+  //用户修改保存用户信息
+  userInfoSave() {
+    console.log(this.data.userInfo);
   },
 
   /**

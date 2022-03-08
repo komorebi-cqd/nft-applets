@@ -1,0 +1,16 @@
+<view class="user-info">
+  <view class="user-info-item">
+    <view class="user-info-sub-title">昵称</view>
+    <input class="user-info-sub user-nike" bindinput="changeNike" value="{{userInfo.nike}}"/>
+  </view>
+  <view class="user-info-item">
+    <view class="user-info-sub-title">绑定手机</view>
+    <view class="user-info-sub">{{userInfo.phone}}</view>
+  </view>
+  <view class="user-info-item">
+    <view class="user-info-sub-title user-info-introduction">个人介绍</view>
+    <textarea maxlength="200" bindinput="changeNike" bindinput="changeIntro" class="user-introduction" value="{{userInfo.introduction}}"></textarea>
+  </view>
+
+  <view class="user-info-save" bindtap="userInfoSave">保存</view>
+</view>

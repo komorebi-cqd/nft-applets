@@ -1,8 +1,8 @@
 <view class="personal-space">
   <!-- 个人中心设置按钮 -->
   <view class="personal-site" wx:if="{{isSelf}}">
-    <view class="personal-icon personal-info-icon" bindtap="goNotify"></view>
-    <view class="personal-icon personal-site-icon"></view>
+    <view class="personal-icon personal-info-icon" bindtap="goPersonalNotify"></view>
+    <view class="personal-icon personal-site-icon" bindtap="goPersonalSite"></view>
   </view>
   <!-- 个人介绍 -->
   <view class="personal-top">

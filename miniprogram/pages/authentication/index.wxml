@@ -1,2 +1,11 @@
-<!--pages/authentication/index.wxml-->
-<text>pages/authentication/index.wxml</text>
+<view class="auth-container">
+  <view class="auth-item">
+    <view class="auth-item-l">姓名</view>
+    <input placeholder="请输入真实姓名" bindinput="changeName" class="auth-item-r" value="{{identityInfo.name}}"/>
+  </view>
+
+  <view class="auth-item">
+    <view class="auth-item-l">身份证号</view>
+    <input placeholder="请输入身份证号" bindinput="changeIdCard" class="auth-item-r" value="{{identityInfo.idCard}}"/>
+  </view>
+</view>

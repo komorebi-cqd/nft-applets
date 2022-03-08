@@ -1,0 +1,43 @@
+@import '../../components/common/styles.scss';
+
+.personal-site {
+  @include bg-gradient;
+}
+
+.personal-site-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1px solid #B73A16;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+
+  .personal-site-item-icon {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+
+    .personal-site-item-img {
+      width: 76rpx;
+      height: 76rpx;
+      flex: 0 0 auto;
+    }
+
+    .personal-site-text {
+      font-size: 28rpx;
+      font-family: '思源雅黑';
+      font-weight: 800;
+      color: #030000;
+      padding-left: 26rpx;
+    }
+  }
+}
+
+.personal-site-allow {
+  width: 66rpx;
+  height: 66rpx;
+  background: url('../../icon//arrow-r.png') no-repeat;
+  background-size: contain;
+  background: #fff;
+}

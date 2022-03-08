@@ -1,25 +1,11 @@
-// pages/authentication/index.ts
+// pages/about/index.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    identityInfo: {
-      name: '',
-      idCard: ''
-    }
-  },
-  changeName(e: any) {
-    this.setData({
-      'identityInfo.name': e.detail.value
-    })
-  },
 
-  changeIdCard(e: any) {
-    this.setData({
-      'identityInfo.idCard': e.detail.value
-    })
   },
 
   /**

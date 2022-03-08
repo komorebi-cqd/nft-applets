@@ -1,0 +1,22 @@
+<view class="personal-notify">
+  <view class="personal-notify-item">
+    <view class="personal-notify-item-icon">
+      <image class="personal-notify-item-img" src="https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg"></image>
+    </view>
+    <view class="personal-notify-text">XXXX关注了您，点击查看,sdasdasdasdasdasdasdasdasdasdsd</view>
+  </view>
+
+  <view class="personal-notify-item">
+    <view class="personal-notify-item-icon">
+      <image class="personal-notify-item-img" src="https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg"></image>
+    </view>
+    <view class="personal-notify-text">XXXX点赞了您发布的内容，点击查看</view>
+  </view>
+
+  <view class="personal-notify-item">
+    <view class="personal-notify-item-icon">
+      <image class="personal-notify-item-img" src="https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg"></image>
+    </view>
+    <view class="personal-notify-text notify-viewed">XXXX关注了您，点击查看,sdasdasdasdasdasdasdasdasdasdsd</view>
+  </view>
+</view>

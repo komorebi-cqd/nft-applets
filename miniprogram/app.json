@@ -1,15 +1,19 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/authentication/index",
+    "pages/userInfo/index",
+    "pages/personalSite/index",
+    "pages/personalNotify/index",
     "pages/personalSpace/index",
+    "pages/index/index",
     "pages/login/index",
     "pages/serach/index",
     "pages/privacy/index",
     "pages/protocol/index",
     "pages/release/index",
-    "pages/authentication/index",
     "pages/dynamicDetail/index",
-    "pages/personalSite/index"
+    "pages/inviteFriend/index",
+    "pages/about/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

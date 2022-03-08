@@ -1,0 +1,35 @@
+@import '../../components/common/styles.scss';
+
+.auth-container {
+  @include full-screen-gradient;
+  font-family: '思源雅黑';
+  font-size: 28rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+
+
+.auth-item {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #B73A16;
+  padding: 0 30rpx;
+
+  
+
+  .auth-item-l {
+    font-weight: 800;
+    color: #030000;
+    flex: 0 1 auto;
+    margin-right: 40rpx;
+  }
+
+  .auth-item-r {
+    text-align: right;
+    font-weight: 800;
+    color: #999999;
+    flex: 1 1 auto;
+  }
+}

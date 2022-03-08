@@ -7,6 +7,30 @@ Page({
   data: {
 
   },
+  //去个人账户资料
+  goUserInfo(){
+    wx.navigateTo({
+      url: '../userInfo/index'
+    })
+  },
+  //我的认证
+  goAuth(){
+    wx.navigateTo({
+      url: '../authentication/index'
+    })
+  },
+  //邀请好友
+  goInvite(){
+    wx.navigateTo({
+      url: '../inviteFriend/index'
+    })
+  },
+  //去关于我们
+  goAbout(){
+    wx.navigateTo({
+      url: '../about/index'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

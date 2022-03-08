@@ -112,13 +112,17 @@ Page({
   showNotify(){
     this.notify.showNotify();
   },
-  //去通知列表
-  goNotify(){
-    
+  //去个人通知列表
+  goPersonalNotify(){
+    wx.navigateTo({
+      url: '../personalNotify/index'
+    })
   },
   //去个人设置页面
   goPersonalSite(){
-
+    wx.navigateTo({
+      url: '../personalSite/index'
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
