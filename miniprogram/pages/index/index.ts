@@ -112,7 +112,8 @@ Page({
       this.setData({
         canIUseGetUserProfile: true
       })
-    }
+    };
+    
     this.getElementHeight(`.swiper-${this.data.current + 1}`);
 
   },
@@ -145,7 +146,7 @@ Page({
   //去到个人中心
   goSpace(){
     //没有登录 跳到登录页
-    if(false){
+    if(true){
       wx.navigateTo({
         url: '../login/index'
       })

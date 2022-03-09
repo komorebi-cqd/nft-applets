@@ -17,6 +17,6 @@
 
       已阅读并同意xxxx的<navigator url="/pages/protocol/index" class="pact-link">《用户协议》</navigator>及<navigator url="/pages/privacy/index" class="pact-link">《隐私政策》</navigator>
     </view>
-    <button class="auth-login" bindtap="login">微信授权登录</button>
+    <button class="auth-login" bindtap="getUserProfile">微信授权登录</button>
   </view>
 </view>
