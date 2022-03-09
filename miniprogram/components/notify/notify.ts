@@ -7,10 +7,6 @@ Component({
     multipleSlots: true
   },
   properties: {
-    message:{
-      type: String,
-      value:'你好'
-    },
     background: {
       type: String,
       value: 'rgba(190,54,32,.7)'
@@ -31,14 +27,18 @@ Component({
    */
   data: {
     animationData: {},
-    animation: <any>null
+    animation: <any>null,
+    message: ''
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    showNotify() {
+    showNotify(e:any) {
+      this.setData({
+        message: e.message
+      })
       let that = this;
       var animation = wx.createAnimation({
         duration: this.data.duration,

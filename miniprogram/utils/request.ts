@@ -1,5 +1,5 @@
 let userLogin = '/user/login';
-
+let getPrivacy ='/config/queryAgreement';
 /**
  * 
  * @param {String} type 请求类型
@@ -9,8 +9,9 @@ let userLogin = '/user/login';
  * @param {Function} failHandle 失败回调函数
  * @param {Function} completeHandle 完成的回调函数
  */
-function ajax(type, params, url, successHandle, failHandle, completeHandle) {
-  let https = 'http://192.168.3.122:8080';
+
+function ajax(type:'GET' | 'POST', params:any, url:String, successHandle:Function, failHandle:Function, completeHandle:Function) {
+  let https = 'http://4k9v843328.zicp.vip';
   let methodType = "application/json";
   if (type === 'GET') {
     let p = Object.keys(params).map(key => {
@@ -20,7 +21,7 @@ function ajax(type, params, url, successHandle, failHandle, completeHandle) {
     params = {}
   }
   if (type === 'POST') {
-    methodType = 'application/x-www-form-urlencoded'
+    methodType = 'application/json'
   }
   wx.request({
     url: https + url,
@@ -32,7 +33,7 @@ function ajax(type, params, url, successHandle, failHandle, completeHandle) {
     success(res) {
       successHandle(res)
     },
-    err(err) {
+    fail(err:any) {
       if (failHandle) {
         failHandle(err)
       }
@@ -46,7 +47,8 @@ function ajax(type, params, url, successHandle, failHandle, completeHandle) {
 }
 
 
-module.exports = {
+export {
   ajax,
   userLogin,
+  getPrivacy
 }

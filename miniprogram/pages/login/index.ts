@@ -10,38 +10,39 @@ Page({
   notify: <any>null,
   data: {
     agree: false,
-    userInfo: {},
-    hasUserInfo: false,
+    userInfo: <any>{},
+    hasUserInfo: false, //是否有用户信息
+    hasPhone: false, //是否有手机
+    unionId: '',
+    phoneCode: ''
   },
   //登录
-  login() {
+  // login() {
+  //   if (!this.data.agree) {
+  //     this.toast.showNotify({ message: '请选中阅读并同意后再登录' });
+  //     return;
+  //   }
+  //   let _this = this;
+  //   wx.login({
+  //     success(res) {
+  //       if (res.code) {
+  //         _this.getUserProfile();
+  //       }
+  //     }
+  //   })
+  // },
+  //获取用户信息
+  getUserProfile() {
+
     if (!this.data.agree) {
-      console.log('请同意授权');
-      // this.dialog.showDialog();
-      this.toast.showNotify();
+
+      this.toast.showNotify({ message: '请选中阅读并同意后再登录' });
       return;
     }
-    wx.login({
-      success(res) {
-        console.log(res);
-        if (res.code) {
-          ajax('POST', { code: res.code }, userLogin, (res: any) => {
-            console.log(res);
-          }, (error: any) => {
-            console.log(error);
-          }, (res: any) => {
-            console.log(res);
-          })
-        }
-      }
-    })
-  },
-  //获取用户信息
-  getUserProfile(e:any){
     wx.getUserProfile({
       desc: '用于完善用户信息',
       success: (res) => {
-        console.log(res);
+        console.log(res, '获取用户信息');
         this.setData({
           userInfo: res.userInfo,
           hasUserInfo: true
@@ -49,8 +50,55 @@ Page({
       }
     })
   },
+  getPhoneNumber(e: any) {
+    let _this = this;
+    //获取电话临时凭证
+    // wx.login({
+    //   success(res) {
+    //     if (res.code) {
+    //       if (e.detail.errMsg !== "getPhoneNumber:fail user deny") {
+    //         _this.setData({
+    //           phoneCode: e.detail.code
+    //         })
+    //         wx.nextTick(() => {
+    //           ajax('POST', { code: e.detail.code, inviterId: _this.data.unionId, headPortraits: _this.data.userInfo.avatarUrl, nickName: _this.data.userInfo.nickName }, userLogin, (res: any) => {
+    //             console.log(res);
+    //           }, (error: any) => {
+    //             console.log(error);
+    //           }, (res: any) => {
+    //             console.log(res);
+    //           })
+    //         })
+    //       } else {
+
+    //       }
+    //     }
+    //   }
+    // })
+    if (e.detail.errMsg !== "getPhoneNumber:fail user deny") {
+      this.setData({
+        phoneCode: e.detail.code
+      })
+      console.log(e.detail.code);
+      
+      wx.nextTick(() => {
+        ajax('POST', { code: e.detail.code, inviterId: _this.data.unionId, headPortraits: _this.data.userInfo.avatarUrl, nickName: _this.data.userInfo.nickName }, userLogin, (res: any) => {
+          console.log(res);
+        }, (error: any) => {
+          console.log(error);
+        }, (res: any) => {
+          console.log(res);
+        })
+      })
+    } else {
+
+    }
+  },
+
 
   checkChange(e: any) { //是否同意协议及隐私政策
+    console.log(e, '勾选隐私政策');
+
     if (e.detail.value.length === 0) {
       this.setData({
         agree: false
@@ -73,8 +121,12 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad() {
-
+  onLoad(option) {
+    if (option && option.unionId) {
+      this.setData({
+        unionId: option.unionId
+      })
+    }
   },
 
   /**

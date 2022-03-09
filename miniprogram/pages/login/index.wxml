@@ -1,5 +1,5 @@
 <view class="login">
-  <notify id='toast' message="请选中阅读并同意后再登录"></notify>
+  <notify id='toast'></notify>
   <!-- <dialog id='dialog' bind:confirmEvent="_confirmEvent" bind:cancelEvent="_cancelEvent"></dialog> -->
   <view class="login-logo">
     <view class="login-block">
@@ -17,6 +17,7 @@
 
       已阅读并同意xxxx的<navigator url="/pages/protocol/index" class="pact-link">《用户协议》</navigator>及<navigator url="/pages/privacy/index" class="pact-link">《隐私政策》</navigator>
     </view>
-    <button class="auth-login" bindtap="getUserProfile">微信授权登录</button>
+    <button class="auth-login"  bindtap="getUserProfile" wx:if="{{!hasUserInfo}}">微信授权登录</button>
+    <button class="auth-login" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" wx:else>微信授权手机号</button>
   </view>
 </view>
