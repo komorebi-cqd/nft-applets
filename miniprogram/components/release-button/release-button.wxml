@@ -1,3 +1,3 @@
-<view class="release-button">
-  <image class="release-image" src="https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/release.png" bindtap="goRelease"></image>
+<view class="release-button" wx:if="{{false}}">
+  <image class="release-image" src="https://metadata.x-protocol.com/xma/test/nft_image/release.png" bindtap="goRelease"></image>
 </view>

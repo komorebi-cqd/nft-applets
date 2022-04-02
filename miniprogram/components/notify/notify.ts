@@ -36,9 +36,11 @@ Component({
    */
   methods: {
     showNotify(e:any) {
-      this.setData({
-        message: e.message
-      })
+      if(e){
+        this.setData({
+          message: e.message
+        })
+      }
       let that = this;
       var animation = wx.createAnimation({
         duration: this.data.duration,

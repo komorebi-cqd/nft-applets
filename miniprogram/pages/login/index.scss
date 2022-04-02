@@ -1,7 +1,7 @@
 .login {
   height: 100vh;
   width: 100%;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/%E5%9B%BE%E5%B1%82%202134.png') no-repeat;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/login-bg.png') no-repeat;
   background-size: 100% 100%;
 
 }
@@ -15,14 +15,13 @@
   .login-block {
     width: 208rpx;
     height: 208rpx;
-    background: #BE3620;
-    border-radius: 30px;
     margin-bottom: 36rpx;
     margin-top: 248rpx;
 
     .login-img {
       width: 100%;
       height: 100%;
+      border-radius: 30rpx;
     }
   }
 

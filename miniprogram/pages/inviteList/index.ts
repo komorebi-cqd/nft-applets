@@ -1,23 +1,39 @@
 // pages/inviteList/index.ts
+import { ajax, selectInviteList } from '../../utils/request'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    inviteList: [
-      { id: 222, userName: '有鹿', userImg: 'https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg', registerDate: '2022-02-21 14:02:03', isFollow: false },
-      { id: 55, userName: '有马', userImg: 'https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg', registerDate: '2022-02-21 14:02:03', isFollow: true },
-      { id: 33, userName: '有熊', userImg: 'https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg', registerDate: '2022-02-21 14:02:03', isFollow: true },
-      { id: 2, userName: '有洋', userImg: 'https://himg.bdimg.com/sys/portrait/item/public.1.16a0f690.WTH8kBcTSLufhyfOtqte9g.jpg', registerDate: '2022-02-21 14:02:03', isFollow: false },
-    ]
+    inviteList: [],
+    pageNum: 1,
+    pageSize: 15,
+    total: 0,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    this.getInviteList();
+  },
+  getInviteList() {
+    wx.showLoading({
+      title: '',
+      mask: true
+    })
+    ajax('POST', { pageNum: this.data.pageNum, pageSize: this.data.pageSize }, selectInviteList, (res: any) => {
+      if(res.data.code === "SUC0000" && res.data.data){
+        this.setData({
+          total: res.data.total,
+          inviteList: this.data.inviteList.concat(res.data.data.list)
+        })
+      }
+      wx.hideLoading()
+    },() => {
+      wx.hideLoading()
+    })
   },
 
   /**
@@ -52,14 +68,29 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    this.setData({
+      pageNum: 1,
+      inviteList: []
+    })
+    wx.nextTick(() => {
+      this.getInviteList();
+      wx.stopPullDownRefresh();
+    })
   },
+    
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    if (this.data.inviteList.length < this.data.total) {
+      this.setData({
+        pageNum: this.data.pageNum + 1
+      })
+      wx.nextTick(() => {
+        this.getInviteList();
+      })
+    }
   },
 
   /**

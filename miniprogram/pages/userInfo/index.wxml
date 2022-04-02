@@ -1,16 +1,19 @@
 <view class="user-info">
   <view class="user-info-item">
     <view class="user-info-sub-title">昵称</view>
-    <input class="user-info-sub user-nike" bindinput="changeNike" value="{{userInfo.nike}}"/>
+    <input maxlength="10" class="user-info-sub user-nike" bindinput="changeNike" value="{{userInfo.nickName}}"/>
   </view>
   <view class="user-info-item">
     <view class="user-info-sub-title">绑定手机</view>
-    <view class="user-info-sub">{{userInfo.phone}}</view>
+    <view class="user-info-sub">{{userInfo.iphone}}</view>
   </view>
   <view class="user-info-item">
     <view class="user-info-sub-title user-info-introduction">个人介绍</view>
-    <textarea maxlength="200" bindinput="changeNike" bindinput="changeIntro" class="user-introduction" value="{{userInfo.introduction}}"></textarea>
+    <textarea maxlength="100" bindinput="changeIntro" class="user-introduction" value="{{userInfo.readme}}"></textarea>
   </view>
 
   <view class="user-info-save" bindtap="userInfoSave">保存</view>
 </view>
+
+<toast id="toast"/>
+<notify id="notify"></notify>

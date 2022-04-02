@@ -1,5 +1,4 @@
 // pages/privacy/index.ts
-import { getPrivacy, ajax } from '../../utils/request';
 
 Page({
 
@@ -14,13 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-    ajax('GET', { agreementType: 'privacyPolicy' }, getPrivacy, (res: any) => {
-      console.log(res);
-    }, (res: any) => {
-      console.log(res);
-    }, (res: any) => {
-      console.log(res);
-    })
+   
   },
 
   /**

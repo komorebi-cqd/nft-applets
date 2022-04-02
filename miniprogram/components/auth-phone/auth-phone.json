@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "notify": "../../components/notify/notify"
+  }
+}

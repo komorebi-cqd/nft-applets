@@ -2,19 +2,21 @@
   <block wx:for="{{inviteList}}" wx:key="id">
     <view class="invite-item">
       <view class="invite-info">
-        <image class="invite-avatar" src="{{item.userImg}}"></image>
+        <image class="invite-avatar" src="{{item.headPortraits}}"></image>
         <view class="invite-info-text">
-          <view class="invite-info-name">{{item.userName}}</view>
-          <view class="invite-info-date">{{item.registerDate}}</view>
+          <view class="invite-info-name">{{item.nickName}}</view>
+          <view class="invite-info-date">注册  {{item.registerDate}}</view>
         </view>
       </view>
-      <view wx:if="{{item.isFollow}}" class="invite-follow-button invite-followed">
+      <!-- <view wx:if="{{item.isFollow}}" class="invite-follow-button invite-followed">
         已关注
       </view>
       <view wx:else class="invite-follow-button invite-follow">
         关注
-      </view>
+      </view> -->
+
     </view>
   </block>
+  <empty emptyImageUrl="https://metadata.x-protocol.com/xma/test/nft_image/empty.png" width="{{165}}" heigth="{{177}}" wx:if="{{inviteList.length === 0}}" emptyText="邀请列表为空" />
 
 </view>

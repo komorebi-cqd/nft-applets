@@ -4,6 +4,7 @@
   background: linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
   padding: 30rpx;
   box-sizing: border-box;
+  padding-bottom: 120rpx;
 }
 
 .content-item {
@@ -11,11 +12,11 @@
   width: 686rpx;
   min-height: 770rpx;
   position: relative;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/article-top.png') left top no-repeat, url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/article-bottom.png') left bottom no-repeat;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/article-top.png') left top no-repeat, url('https://metadata.x-protocol.com/xma/test/nft_image/article-bottom.png') left bottom no-repeat;
   background-size: 100% auto;
   min-height: 500rpx;
   box-sizing: border-box;
-  margin: 0 auto 10rpx;
+  margin: 0 auto 20rpx;
   padding: 30rpx 32rpx 50rpx;
 }
 
@@ -24,9 +25,9 @@
   position: absolute;
   left: 0;
   top: 200rpx;
-  bottom: 254rpx;
+  bottom: 252rpx;
   width: 100%;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/article-middle.png') left top repeat-y;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/article-middle.png') left top repeat-y;
   background-size: 100% auto;
 }
 
@@ -85,7 +86,7 @@
     height: 58rpx;
     right: 24rpx;
     top: 18rpx;
-    background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/collection-mark.png') no-repeat;
+    background: url('https://metadata.x-protocol.com/xma/test/nft_image/collection-mark.png') no-repeat;
     background-size: contain;
 
   }
@@ -109,10 +110,17 @@
     .operate-block {
       position: relative;
       margin-right: 40rpx;
-      width: 36rpx;
-      height: 36rpx;
-
+      width: 50rpx;
+      height: 50rpx;
+      .operate-button {
+        opacity: 0;
+        width: 50rpx;
+        height: 50rpx;
+      }
       .operate-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
       }

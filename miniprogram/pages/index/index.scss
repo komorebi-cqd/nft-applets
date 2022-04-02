@@ -7,19 +7,28 @@
   height: 88rpx;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   align-items: center;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/top-bcg.png') no-repeat;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/top-bcg.png') no-repeat;
   background-size: 100% auto;
-
+  padding-left: 36rpx;
+  box-sizing: border-box;
 }
 
 .avatar {
+  margin-left: 20rpx;
   .avatar-img {
     width: 58rpx;
     height: 58rpx;
+    border: 1px solid #DC404B;
     border-radius: 50%;
   }
+}
+.home-name{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  font-weight: 800;
+  color: #BE3620;
 }
 
 .search {
@@ -66,7 +75,7 @@
   min-height: calc(100vh - 88rpx);
   width: 100%;
   padding: 0 30rpx;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/content-bottom.png') no-repeat;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/content-bottom.png') no-repeat;
   background-origin: padding-box;
   background-size: 100% auto;
   background-position: bottom;
@@ -75,9 +84,10 @@
 }
 
 .content {
+  padding-top: 40rpx;
   min-height: calc(100vh - 88rpx);
   width: 100%;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/content-middle.png') no-repeat;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/content-middle.png') no-repeat;
   background-size: contain;
   background-position: bottom 209rpx left 0;
   box-sizing: border-box;
@@ -96,13 +106,13 @@
     font-family: '思源雅黑';
     font-weight: 800;
     color: #FFFFFF;
-    background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/unselected.png') no-repeat;
+    background: url('https://metadata.x-protocol.com/xma/test/nft_image/unselected.png') no-repeat;
     background-size: cover;
     background-position: top center;
     text-align: center;
     line-height: 72rpx;
   }
   .checked{
-    background-image: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/selectd.png');
+    background-image: url('https://metadata.x-protocol.com/xma/test/nft_image/selectd.png');
   }
 }

@@ -5,21 +5,15 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    contentArray: Object
+    contentArray: Array
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    collection: {
-      avatar: 'https://img2.baidu.com/it/u=762896549,2665974992&fm=253&fmt=auto&app=138&f=JPEG?w=887&h=500',
-      name: '灰原哀',
-      approve: true,
-      isFollow: false,
-      articleCover: 'https://img2.baidu.com/it/u=762896549,2665974992&fm=253&fmt=auto&app=138&f=JPEG?w=887&h=500'
-    }
   },
+
 
   /**
    * 组件的方法列表
@@ -27,9 +21,12 @@ Component({
   methods: {
     goDetail(e: any) {
       let detailId = e.currentTarget.dataset.index;
-      console.log(detailId,'详情Id');
+      let result = this.data.contentArray.filter(item => {
+        return item.nftRecording === detailId;
+      })
+      let strResult = JSON.stringify(result);
       wx.navigateTo({
-        url: `../../pages/dynamicDetail/index?detail=${detailId}`
+        url: `../../pages/dynamicDetail/index?detail=${strResult}`
       })
     },
     goPersonalSpace(e: any) {

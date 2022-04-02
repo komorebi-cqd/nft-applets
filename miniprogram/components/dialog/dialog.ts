@@ -6,7 +6,7 @@ Component({
   properties: {
     title: {
       type: String,
-      value: '未实名认真'
+      value: '未实名认认证'
     },
     content: {
       type: String,
@@ -40,7 +40,6 @@ Component({
       })
     },
     cancel() {
-      console.log(this.data.cancel, "取消");
       this.setData({
         isShow: true
       })
@@ -49,7 +48,7 @@ Component({
     confirm() {
       console.log(this.data.confirm, "确认");
       this.setData({
-        isShow: false
+        isShow: true
       })
       this.triggerEvent('confirmEvent');
     }

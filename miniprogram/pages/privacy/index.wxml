@@ -2,9 +2,7 @@
 <view class="privacy-wrap">
   <view class="privacy-wrap2">
     <view class="privacy">
-      国潮的兴起，是当代人对文化复兴的渴求和民族自
-  国潮的兴起，是当代人对文化复兴的渴求和民族自
-  信的体现，开发真正的国潮文创设计，是时代......
+      <web-view src="https://www.boicehot.com/privacy_policy.html"></web-view>
     </view>
   </view>
 </view>

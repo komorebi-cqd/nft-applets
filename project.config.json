@@ -5,9 +5,9 @@
   },
   "miniprogramRoot": "miniprogram/",
   "compileType": "miniprogram",
-  "projectname": "nft-collection",
+  "projectname": "collection",
   "setting": {
-    "urlCheck": false,
+    "urlCheck": true,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -50,5 +50,6 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "appid": "wx54e7e06f32b7b674",
+  "libVersion": "2.22.1",
   "condition": {}
 }

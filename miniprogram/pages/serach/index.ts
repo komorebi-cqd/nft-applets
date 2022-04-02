@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    searchContent: ''
+  },
+  changeSearchContent(e:any){
+    this.setData({
+      searchContent: e.detail.value
+    })
+  },
+  searchNft(e:any){
+    console.log(e);
+    
   },
 
   /**

@@ -1,0 +1,10 @@
+<view class="reserve-container">
+  <view class="reserve-price">￥{{nftPrice}}</view>
+  <view class="reserve-right">
+    <view class="reserve-amount" wx:if="{{false}}">限量{{nftQuantity}}份</view>
+    <view class="reserve-state" class="reserve-state" wx:if="{{false}}" bindtap="goBuyCollection">购买</view>
+    <view class="reserve-state" class="reserve-state {{isSubscribe? 'reserved' : ''}}" bindtap="subscribeButton" wx:if="{{nftStatus === 2}}">{{isSubscribe? '已预约' : '预约'}}</view>
+    <view class="reserve-state" class="reserve-state reserved" wx:if="{{nftStatus === 3}}">售罄</view>
+    <view class="reserve-state" class="reserve-state reserved" wx:if="{{nftStatus === 4}}">仅展示</view>
+  </view>
+</view>

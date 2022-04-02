@@ -1,9 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/inviteFriend/index",
+    "pages/inviteList/index",
+    "pages/previewImg/index",
     "pages/authentication/index",
     "pages/site/index",
-    "pages/inviteList/index",
     "pages/userInfo/index",
     "pages/personalSite/index",
     "pages/personalNotify/index",
@@ -14,8 +16,7 @@
     "pages/protocol/index",
     "pages/release/index",
     "pages/dynamicDetail/index",
-    "pages/inviteFriend/index",
-    "pages/about/index"
+    "pages/orderDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,4 +26,5 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
+
 }

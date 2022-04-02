@@ -1,0 +1,45 @@
+.nft-detail-container {
+  width: 100%;
+  min-height: 313rpx;
+  background: linear-gradient(90deg, #EFC7B0, #E6E8E0, #B9D1CC);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.nft-detail-wrap {
+  z-index: 2;
+  width: 100%;
+  min-height: 313rpx;
+  position: relative;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/comment-top.png') left top no-repeat, url('https://metadata.x-protocol.com/xma/test/nft_image/comment-bottom.png') left bottom no-repeat;
+  background-size: 100% auto;
+  box-sizing: border-box;
+  margin: 0 auto 0rpx;
+  padding: 90rpx 30rpx 38rpx;
+  position: relative;
+
+  .nft-detail-sub {
+    position: absolute;
+    left: 29rpx;
+    top: 36rpx;
+    font-size: 28rpx;
+    font-family: '思源雅黑';
+    font-weight: 800;
+    color: #333333;
+  }
+}
+
+.line-wrap {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 130rpx;
+  bottom: 60rpx;
+  width: 100%;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/article-middle.png') left top repeat-y;
+  background-size: 100% auto;
+}
+
+.nft-detail-img{
+  width: 100%;
+}

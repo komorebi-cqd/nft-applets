@@ -1,37 +1,25 @@
 <view class="home">
-  <view class="top-search">
+  <navBar background='#fff' searchBar="{{true}}" bindsearch='search'>
+    <view class="avatar" bindtap="goSpace" slot="left">
+      <image class="avatar-img" src="{{userInfo.headPortraits}}" wx:if="{{userInfo.headPortraits}}" />
+      <image class="avatar-img" src="{{defaultAvatar}}" wx:else></image>
+    </view>
+  </navBar>
+
+  <!-- <view class="top-search">
     <view class="avatar" bindtap="goSpace">
-      <image class="avatar-img" src="{{avatar}}" />
+      <image class="avatar-img" src="{{userInfo.headPortraits}}" wx:if="{{userInfo.headPortraits}}" />
+      <image class="avatar-img" src="{{defaultAvatar}}" wx:else></image>
     </view>
-    <view class="search">
-      <text class="search-l">搜索</text>
-      <navigator url="/pages/serach/index" class="go-search"></navigator>
-      <image class="search-icon" src="../../icon/search.png" />
-    </view>
-  </view>
+    <view class="home-name">{{userInfo.nickName}}</view>
+
+  </view> -->
   <view class="content-wrap">
     <view class="content-wrap2">
       <view class="content">
         <release wx:if="{{false}}" empty-image-url="https://qmzqmz.oss-cn-shenzhen.aliyuncs.com/image/nft-image/nft-image/rest.png" empty-text="网络不佳" />
-        <release-button></release-button>
-        <view class="choose">
-          <block wx:for="{{navTap}}" wx:key="id">
-            <view class="category" class="category {{item.id === current ? 'checked' : ''}}" bindtap="swichType" data-index="{{item.id}}">{{item.navName}}</view>
-          </block>
-        </view>
-        <swiper class="swiper" style="height: {{swiperHeight}}px;" current="{{current}}" bindchange="swiperChange">
-          <swiper-item>
-            <content-item contentArray="{{dynamicList}}" class='swiper-1' />
-          </swiper-item>
-          <swiper-item>
-            <content-item contentArray="{{collection}}" class='swiper-2' />
-          </swiper-item>
-          <swiper-item>
-            <content-item contentArray="{{followList}}" class='swiper-3' />
-          </swiper-item>
-        </swiper>
-
-
+        <content-item contentArray="{{collection}}" class='swiper-1' wx:if="{{collection.length > 0}}" />
+        <release class='swiper-1' width="{{165}}" height="{{193}}" empty-image-url="https://metadata.x-protocol.com/xma/test/nft_image/empty.png" empty-text="暂无内容" wx:else />
       </view>
     </view>
   </view>

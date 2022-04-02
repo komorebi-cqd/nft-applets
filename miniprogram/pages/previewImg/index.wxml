@@ -1,0 +1,4 @@
+<view class="preview-img-container">
+    <image class="preview-img" src="{{img}}" mode="widthFix"></image>
+  <view bindtap="downImg" class="down-img-button"></view>
+</view>

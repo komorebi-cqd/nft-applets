@@ -1,22 +1,22 @@
 <view class="personal-space">
   <!-- 个人中心设置按钮 -->
   <view class="personal-site" wx:if="{{isSelf}}">
-    <view class="personal-icon personal-info-icon" bindtap="goPersonalNotify"></view>
+    <view class="personal-icon personal-info-icon" bindtap="goPersonalNotify" wx:if="{{false}}"></view>
     <view class="personal-icon personal-site-icon" bindtap="goPersonalSite"></view>
   </view>
   <!-- 个人介绍 -->
   <view class="personal-top">
     <view class="personal-introduce">
       <view class="personal-intro">
-        <image class="personal-avtart" src="https://img0.baidu.com/it/u=94227716,37589521&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"></image>
+        <image class="personal-avtart" src="{{userInfo.headPortraits}}"></image>
         <view class="personal-info">
-          <text class="personal-info-name">姚明</text>
-          <text class="personal-info-introduce">以梦为马，不负韶华</text>
+          <text class="personal-info-name">{{userInfo.nickName}}</text>
+          <text class="personal-info-introduce">{{userInfo.readme}}</text>
         </view>
       </view>
-      <view class="creator-apply" bindtap="showNotify" wx:if="{{isSelf}}">创作者申请</view>
+      <view class="creator-apply" bindtap="showNotify" wx:if="{{false}}">创作者申请</view>
     </view>
-    <view class="personal-list">
+    <view class="personal-list" wx:if="{{false}}">
       <view class="personal-list-sum">
         <text class="personal-nums">12</text>数字藏品
       </view>
@@ -32,20 +32,14 @@
     </view>
   </view>
   <!-- 个人中心动态 -->
-  <view class="personal-nav">
-    <block wx:for="{{navTap}}" wx:key="id">
-      <view class="personal-nav-type {{item.id === current ? 'personal-active' : ''}}" bindtap="swichType" data-index="{{item.id}}">{{item.navName}}</view>
-    </block>
-  </view>
+  <!-- <view class="personal-nav">
+    
+  </view> -->
 
-  <swiper class="swiper" style="height: {{swiperHeight}}px;" current="{{current}}" bindchange="swiperChange">
+  <swiper class="personal-swiper" style="height: {{swiperHeight}}px;" current="{{current}}" bindchange="swiperChange">
     <swiper-item>
-      <content-item contentArray="{{dynamicList}}" class='swiper-1' wx:if="{{dynamicList.length === 0}}"/>
-      <release emptyImageUrl="https://bpic.588ku.com/element_origin_min_pic/19/11/20/a5a7dbafdbfdec9f9e70823578bc5467.jpg" marginTop="{{100}}" class='swiper-1' emptyText="暂未发布任何动态"/>
-    </swiper-item>
-    <swiper-item>
-      <content-item contentArray="{{collection}}" class='swiper-2' wx:if="{{dynamicList.length !== 0}}"/>
-      <release emptyImageUrl="" class='swiper-2' emptyText="暂未发布任何数字藏品"/>
+      <content-item contentArray="{{collection}}" class='swiper-1' wx:if="{{collection.length !== 0}}"/>
+      <release emptyImageUrl="https://metadata.x-protocol.com/xma/test/nft_image/empty.png" top="{{50}}" width="{{165}}" heigth="{{177}}" class='swiper-1' emptyText="暂未发布任何数字藏品"/>
     </swiper-item>
   </swiper>
   <notify background="rgba(0,0,0,0.7)" message="你好牛哦！！！" id="notify"/>

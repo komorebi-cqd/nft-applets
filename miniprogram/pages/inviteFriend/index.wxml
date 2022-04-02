@@ -1,2 +1,7 @@
-<!--pages/inviteFriend/index.wxml-->
-<text>pages/inviteFriend/index.wxml</text>
+<view class="invite-friend">
+  <canvas type="2d" id='posterCanvas' style="margin: 0 auto;width: 686rpx;height: 951rpx;"></canvas>
+  <button class="invite-save-img" bindtap="inviteSaveImg">保存图片</button>
+  <view class="go-invite-link" bindtap="goInviteList">邀请记录>></view>
+    <canvas type="2d" id="ewmCanvas" style="width: 200rpx; height: 200rpx;" class="hidden" hidden="{{isShowEwm}}"></canvas>
+</view>
+

@@ -1,6 +1,9 @@
 {
   "navigationBarTitleText": "动态详情",
   "usingComponents": {
-    "comment": "../../components/comment/comment"
+    "nft-detail": "../../components/nft-detail/nft-detail",
+    "reserve": "../../components/reserve/reserve",
+    "toast": "../../components/toast/toast",
+    "dialog": "../../components/dialog/dialog"
   }
 }

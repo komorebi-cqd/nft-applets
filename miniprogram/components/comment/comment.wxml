@@ -1,7 +1,7 @@
 <view class="comment-container">
   <view class="comment-wrap">
     <view class="comment-sub">评论</view>
-    <release emptyImageUrl="https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/no-comment.png" emptyText="暂无评论" wx:if="{{false}}" />
+    <release emptyImageUrl="https://metadata.x-protocol.com/xma/test/nft_image/no-comment.png" emptyText="暂无评论" wx:if="{{false}}" />
 
     <view class="comment-content">
       <block wx:for="{{commentList}}" wx:key="id">
@@ -20,7 +20,7 @@
 
     <view class="more">
       查看更多
-      <image class="more-arrow" src="https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/arrow.png" />
+      <image class="more-arrow" src="https://metadata.x-protocol.com/xma/test/nft_image/arrow.png" />
     </view>
     <view class="line-wrap">
     </view>

@@ -3,6 +3,7 @@
   "usingComponents": {
     "toast": "../../components/toast/toast",
     "dialog": "../../components/dialog/dialog",
-    "notify": "../../components/notify/notify"
+    "notify": "../../components/notify/notify",
+    "auth-phone": "../../components/auth-phone/auth-phone"
   }
 }

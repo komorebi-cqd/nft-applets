@@ -8,7 +8,7 @@
 
 .privacy-wrap2 {
   width: 100%;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/content-bottom.png') no-repeat;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/content-bottom.png') no-repeat;
   background-origin: padding-box;
   background-size: 100% auto;
   background-position: bottom;
@@ -18,7 +18,7 @@
 .privacy {
   min-height: 100vh;
   width: 100%;
-  background: url('https://qmz123.oss-cn-shenzhen.aliyuncs.com/image/nft-image/content-middle.png') no-repeat;
+  background: url('https://metadata.x-protocol.com/xma/test/nft_image/content-middle.png') no-repeat;
   background-size: contain;
   background-position: bottom 209rpx left 0;
   box-sizing: border-box;

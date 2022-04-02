@@ -1,0 +1,42 @@
+<view class="content-item">
+  <!-- 文章ID -->
+  <view class="article" data-index="{{collection.id}}">
+    <view class="article-top">
+      <!-- 需要用户ID -->
+      <view class="article-top-l" data-userid="{{collection.unionId}}">
+        <image class="user-avatar" src="{{collection.avatar}}" wx:if="{{collection.isInstitution !== 0}}"></image>
+        <text class="user-name" wx:else>{{collection.nickname}}</text>
+        <image wx:if="{{collection.isInstitution === 0}}" class="user-mark" src="../../icon/auth.png"></image>
+      </view>
+      <view class="follow" wx-if="{{false}}">
+        +关注
+      </view>
+      <view class="follow no" wx-if="{{false}}">
+        已关注
+      </view>
+    </view>
+    <view class="article-image" bindtap="goDetail" data-index="{{collection.nftRecording}}">
+      <image class="article-image-url" src="{{collection.nftFilePath}}" data-thumb="{{collection.nftFilePath}}" wx:if="{{!collection.nftFileType}}" bindload="imgOnLoad" style="display: none;"></image>
+      <image class="article-image-url" mode="aspectFill" src="{{loaded ? collection.nftFilePath : defalutImg}}" wx:if="{{!collection.nftFileType}}"></image>
+      <video id="myVideo" wx:else src="{{collection.nftFilePath}}" enable-danmu danmu-btn controls></video>
+      <view class="collection-mark" wx:if="{{true}}"></view>
+    </view>
+
+    <view class="article-operate">
+      <view class="operate-l">
+
+        <view class="operate-block">
+          <image class="operate-icon" src="https://metadata.x-protocol.com/xma/test/nft_image/wx.png"></image>
+          <button class="operate-button" open-type="share"></button>
+        </view>
+      </view>
+      <view class="operate-r" wx-if="{{false}}">···</view>
+    </view>
+    <view class="article-text" bindtap="goDetail" data-index="{{collection.nftRecording}}">
+      {{collection.nftDetails}}
+    </view>
+  </view>
+
+  <view class="line-wrap">
+  </view>
+</view>

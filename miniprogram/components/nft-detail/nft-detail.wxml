@@ -1,0 +1,12 @@
+<view class="nft-detail-container">
+  <view class="nft-detail-wrap">
+    <view class="nft-detail-sub">详情</view>
+    <release emptyImageUrl="https://metadata.x-protocol.com/xma/test/nft_image/no-comment.png" emptyText="暂无详情" wx:if="{{false}}" />
+    <view class="nft-detail-content">
+      <image class="nft-detail-img" mode="widthFix" src="{{img}}"></image>
+    
+    </view>
+    <view class="line-wrap">
+    </view>
+  </view>
+</view>

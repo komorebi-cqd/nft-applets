@@ -1,0 +1,48 @@
+.reserve-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  padding: 0 38rpx;
+  box-sizing: border-box;
+}
+
+.reserve-price {
+  font-size: 30rpx;
+  font-family: '思源雅黑';
+  font-weight: 800;
+  color: #BE3620;
+}
+
+.reserve-right{
+  display: flex;
+  align-items: center;
+  
+}
+.reserve-amount{
+  font-size: 24rpx;
+  font-weight: 800;
+  color: #BE3620;
+}
+
+.reserve-state {
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #BE3620;
+  border-radius: 30rpx;
+  text-align: center;
+  font-weight: 800;
+  font-size: 28rpx;
+  color: #ffffff;
+  margin-left: 22rpx;
+}
+.reserved{
+  background: #999999;
+}

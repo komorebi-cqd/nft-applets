@@ -1,4 +1,8 @@
 {
   "navigationBarTitleText": "邀请列表",
-  "usingComponents": {}
+  "onReachBottomDistance": 40,
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "empty": "../../components/empty/empty"
+  }
 }

@@ -1,18 +1,33 @@
-// pages/about/index.ts
+// pages/orderDetail/index.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    trendInfo: {
 
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad() {
-
+  onLoad(option) {
+    console.log(option,'order-detail option');
+    if (option && option.trendInfo) {
+      let trendInfo = JSON.parse(option.trendInfo);
+      this.setData({
+        trendInfo:trendInfo
+      })
+      console.log(this.data.trendInfo,'详情');
+     
+    }
+  },
+  //支付
+  buyCollection(){
+    console.log('支付');
+    
   },
 
   /**

@@ -1,0 +1,99 @@
+/* pages/orderDetail/index.wxss */
+@import '../../components/common/styles.scss';
+
+.order-detail-container {
+  @include full-screen-gradient;
+  padding: 44rpx 30rpx;
+  box-sizing: border-box;
+
+  .order-view {
+    width: 100%;
+    height: 240rpx;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    padding: 20rpx 38rpx 40rpx;
+    box-sizing: border-box;
+  }
+}
+
+.order-img-view {
+  width: 180rpx;
+  height: 180rpx;
+  flex: 0 0 auto;
+  margin-right: 20rpx;
+
+  .order-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.order-intr-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  .order-text {
+    flex: 0 0 auto;
+    font-size: 28rpx;
+    font-family: '思源雅黑';
+    font-weight: 400;
+    color: #000000;
+    line-height: 42rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+  }
+  
+}
+.order-price {
+  align-self: flex-end;
+  font-size: 42rpx;
+  font-weight: 800;
+  color: #BE3620;
+  .order-price-symbol{
+    font-size: 28rpx;
+  }
+}
+
+
+.order-bottom-button{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  padding: 0 38rpx;
+  box-sizing: border-box;
+  .order-price{
+    align-self: center
+  }
+}
+
+.order-button{
+  min-width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #BE3620;
+  border-radius: 30rpx;
+  text-align: center;
+  font-weight: 800;
+  font-size: 28rpx;
+  color: #ffffff;
+  margin-left: 22rpx;
+  padding: 0 44rpx;
+  box-sizing: border-box;
+}
+

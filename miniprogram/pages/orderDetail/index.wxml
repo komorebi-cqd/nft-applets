@@ -1,0 +1,15 @@
+<view class="order-detail-container">
+  <view class="order-view">
+    <view class="order-img-view">
+      <image class="order-img" mode="aspectFill" src="{{trendInfo.nftFilePath}}"></image>
+    </view>
+    <view class="order-intr-text">
+      <view class="order-text">{{trendInfo.nftDetails}}</view>
+      <view class="order-price"><text class="order-price-symbol">￥</text>{{trendInfo.nftPrice}}</view>
+    </view>
+  </view>
+  <view class="order-bottom-button">
+    <view class="order-price"><text class="order-price-symbol">￥</text>{{trendInfo.nftPrice}}</view>
+    <view class="order-button" bindtap="buyCollection">确认支付</view>
+  </view>
+</view>

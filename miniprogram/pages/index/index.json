@@ -1,8 +1,14 @@
 {
   "navigationBarTitleText": "九色鹿",
+  "backgroundColor": "#333333",
+  "backgroundTextStyle": "dark",
+  "onReachBottomDistance": 20,
+  "navigationStyle": "custom",
   "usingComponents": {
     "release": "../../components/empty/empty",
     "release-button": "../../components/release-button/release-button",
-    "content-item": "../../components/content-item/content-item"
+    "content-item": "../../components/content-item/content-item",
+    "dialog": "../../components/dialog/dialog",
+    "navBar": "../../components/navBar/navBar"
   }
 }

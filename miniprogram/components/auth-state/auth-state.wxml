@@ -1,13 +1,15 @@
 <view class="auth-state-container" wx:if="{{isShow}}">
   <view class="auth-state" wx:if="{{state}}">
     <view class="auth-state-image">
+      <image class="auth-image" src="https://metadata.x-protocol.com/xma/test/nft_image/auth-success.png" alt=""/>
     </view>
     <view class="auth-tip-text">恭喜认证成功</view>
-    <view class="auth-button" bindtap="authSuccess">”我的“页面</view>
+    <view class="auth-button" bindtap="authSuccess">“我的”页面</view>
   </view>
 
   <view class="auth-state" wx:else>
     <view class="auth-state-image">
+      <image class="auth-image" src="https://metadata.x-protocol.com/xma/test/nft_image/auth-fail.png" alt=""/>
     </view>
     <view class="auth-tip-text">认证失败</view>
     <view class="auth-button" bindtap="authFail">重试</view>

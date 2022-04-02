@@ -7,13 +7,13 @@ Component({
     multipleSlots: true
   },
   properties: {
-    message: {
-      type: String,
-      value: '发布成功'
-    },
-    duration:{
+    // message: {
+    //   type: String,
+    //   value: '发布成功'
+    // },
+    duration: {
       type: Number,
-      value: 900
+      value: 300
     }
   },
 
@@ -22,30 +22,41 @@ Component({
    */
   data: {
     animationData: {},
-    animation: <any>null
+    animation: <any>null,
+    message: '',
+    isShowView: true,
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    showToast(){
+    showToast(e: any) {
       let that = this;
-      var animation = wx.createAnimation({
-        duration: this.data.duration,
-        timingFunction: 'ease'
-      })
-      this.data.animation = animation;
-      animation.opacity(1).step();
-      this.setData({
-        animationData: animation.export(),
-      })
-      setTimeout(function () {
-        animation.opacity(0).step()
-        that.setData({
-          animationData: animation.export()
+      if (e && e.msg) {
+        this.setData({
+          message: e.msg,
+          isShowView: false,
+          isLoading: true,
         })
-      }.bind(this), 1500)
+        var animation = wx.createAnimation({
+          duration: this.data.duration,
+          timingFunction: 'ease-in-out'
+        })
+        this.data.animation = animation;
+        animation.opacity(1).step();
+        this.setData({
+          animationData: animation.export(),
+        })
+        setTimeout(function () {
+          animation.opacity(0).step()
+          that.setData({
+            animationData: animation.export(),
+            isShowView: true,
+            isLoading: false
+          })
+        }.bind(this), 1500)
+      }
     }
   }
 })

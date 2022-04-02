@@ -27,9 +27,9 @@ Component({
       })
     },
     authSuccess(){
-      wx.redirectTo({
-        url: '../../pages/personalSpace/index'
-      })
+      wx.navigateBack({
+        delta: 1
+      });
       this.setData({
         isShow: false
       })

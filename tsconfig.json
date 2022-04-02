@@ -23,7 +23,7 @@
   },
   "include": [
     "./**/*.ts"
-, "miniprogram/pages/login/index.ts", "miniprogram/utils/request.ts"  ],
+, "miniprogram/pages/login/index.ts", "miniprogram/utils/request.ts", "miniprogram/utils/weapp-qrcode.ts"],
   "exclude": [
     "node_modules"
   ]

@@ -1,0 +1,10 @@
+<view class="auth-phone-container" hidden="{{isShow}}">
+  <view class="auth-phone">
+    <view class="auth-phone-block">
+      <image class="auth-phone-img" src="{{avatarUrl}}" />
+    </view>
+    <text class="auth-phone-name">{{nickName}}</text>
+    <button class="auth-phone-button" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信授权手机号</button>
+  </view>
+  <notify id='notify'></notify>
+</view>

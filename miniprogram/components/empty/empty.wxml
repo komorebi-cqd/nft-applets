@@ -1,6 +1,6 @@
 <view class="empty">
-    <view class="empty-image" style="margin-top: {{marginTop}}rpx;">
-      <image style="width: {{width}}rpx;height: {{height}};top: {{top}}rpx;" class="empty-image-src" src="{{emptyImageUrl}}"/>
+    <view class="empty-image" style="margin-top: {{top}}rpx;">
+      <image style="width: {{width}}rpx;height: {{height}};" class="empty-image-src" src="{{emptyImageUrl}}"/>
     </view>
     <text class="empty-description">{{emptyText}}</text>
 </view>
